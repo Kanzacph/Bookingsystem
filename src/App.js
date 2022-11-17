@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Hej Kanza Banza Bandit
         </a>
       </header>
     </div>

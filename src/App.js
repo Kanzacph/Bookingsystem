@@ -15,6 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          Hej Kanza Banza Bandit
         </a>
       </header>
     </div>

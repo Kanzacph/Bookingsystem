@@ -3,3 +3,10 @@
     background-color: #00163b;
    
   }
+
+.app-container {
+  background-color: #00163b;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

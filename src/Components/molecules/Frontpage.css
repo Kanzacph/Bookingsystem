@@ -1,0 +1,19 @@
+.frontpage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.frontpage-button {
+    border: 1px solid #fbb040;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.frontpage-button-container {
+    display: flex;
+    flex-direction: row;
+}

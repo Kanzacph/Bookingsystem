@@ -1,1 +1,8 @@
-import cph-logo from './src/Components/atoms/cph-logo.png';
+import cphlogo from "../atoms/cphlogo.png";
+
+export default function TheNavbar(props){
+    return(
+        <img src={cphlogo.png} width="40px" alt="cphlogo"/>
+    )
+}
+

@@ -5,7 +5,15 @@ export default function TheNavbar(props){
     return(
         <div className ="App-header">
             <img src={cphlogo} width="200px" alt="cphlogo"/>
+            
+            <div className="menuknap">
+            <button className="openmenu">Menu</button>
+            </div>
         </div>
+
+        
     )
 }
+
+
 

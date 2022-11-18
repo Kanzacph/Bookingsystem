@@ -7,8 +7,7 @@ export default function TheNavbar(props){
             <img src={cphlogo} width="200px" alt="cphlogo"/>
             
             <div className="menuknap">
-            <button className="openmenu">menu</button>
-            <button className="closemenu"></button>
+            <button className="openmenu">Menu</button>
             </div>
         </div>
 

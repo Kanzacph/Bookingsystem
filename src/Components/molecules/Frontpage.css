@@ -8,12 +8,46 @@
 
 .frontpage-button {
     border: 1px solid #fbb040;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
 }
 
 .frontpage-button-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    
 }
+
+.images{
+    height: 100px;
+    width: 90px;
+    padding-top: 20%;
+}
+
+.images1{
+    height: 100px;
+    width: 125px;
+    padding-top: 20%;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 30px;
+   
+}
+
+
+
+
+
+

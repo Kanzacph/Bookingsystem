@@ -3,6 +3,7 @@ import Kalender from "../atoms/Kalender.png";
 import Booking from "../atoms/Booking.png";
 
 export default function Frontpage(props){
+
     return(
         <div className ="frontpage-container">
             <h1>Vælg næste trin</h1>

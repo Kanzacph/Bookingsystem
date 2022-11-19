@@ -30,7 +30,5 @@ export default function Frontpage(props){
                 </div>
             </div>
         </div>
-      </div>
-    </div>
   );
 }

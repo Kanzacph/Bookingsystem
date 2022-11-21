@@ -14,7 +14,7 @@ export default function MyBookings(props){
         <p>Her kan du finde dine bookinger, redigere og evt. slette bookinger</p>
         </div>
 
-        <div className="mybookings-bokse">
+        <div className="mybookings-boks2">
             <div className="myboookings-boks1">
                 <div className="mybookings-date">
                     <h1>
@@ -89,7 +89,8 @@ export default function MyBookings(props){
 
                 </div>
             </div>
-            
+
+
         </div>
 
         </div>

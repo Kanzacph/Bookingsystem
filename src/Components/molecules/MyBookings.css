@@ -1,0 +1,76 @@
+/* Kanzas eksempel */
+.mybookings-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    background-color: #00163b;
+
+}
+.mybookings-text{
+    color: white;
+    text-align: center;
+      
+        
+}
+
+.mybookings-bokse{
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+   
+    
+}
+
+.myboookings-boks1, .myboookings-boks2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    background: rgb(217, 217, 217, 20%);
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px;
+}
+
+.mybookings-date{
+    color: white;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    padding: 20px; 
+    padding-right: 40px; 
+    border-right: 2px solid rgb(251, 176, 64, 43%); 
+    
+}
+
+.datoen{
+    display: flex;   
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -40px;
+    font-size: 35px;
+}
+
+.mybookings-info{
+    color: white;
+    padding-right: 500px;    
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+.mybookings-buttons{
+    padding-right: 20px; 
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+}
+
+.changebooking-button{
+    padding: 20px;
+}
+.deletebooking-button{
+    padding: 20px;
+}
+
+

@@ -42,8 +42,8 @@ export default function Locals(props){
                 <h2>Lokale 102</h2> 
                 </div>
                 <div className='et'>
-                <img className='klasselokale' src={klasselokale} alt="klasselokale" />
-                    <p>
+               
+                    <p className='p2'>
                     Undervisningslokale ligger på 1. sal <br />
                     <br />
                     Udstyr: <br />
@@ -59,6 +59,7 @@ export default function Locals(props){
                     Max kapacitet: <br />
                     100 personer, 40 siddepladser
                     </p>
+                    <img className='klasselokale1' src={klasselokale} alt="klasselokale" />
                 </div>
 
 
@@ -100,8 +101,7 @@ export default function Locals(props){
                 <h2>Lokale 204</h2> 
                 </div>
                 <div className='et'>
-                <img className='klasselokale' src={klasselokale} alt="klasselokale" />
-                    <p>
+                    <p className='p2'>
                     Undervisningslokale ligger på 1. sal <br />
                     <br />
                     Udstyr: <br />
@@ -117,6 +117,7 @@ export default function Locals(props){
                     Max kapacitet: <br />
                     100 personer, 40 siddepladser
                     </p>
+                    <img className='klasselokale1' src={klasselokale} alt="klasselokale" />
                 </div>
             </div>
             </div>

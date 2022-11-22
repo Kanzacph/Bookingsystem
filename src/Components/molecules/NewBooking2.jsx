@@ -25,6 +25,8 @@ export default function NewBooking2(props){
             </div>
 
             
+
+            
         </div>
     )
 }

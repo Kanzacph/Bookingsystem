@@ -1,16 +1,45 @@
 .locals-container p{
     text-align: left;
 }
-
 .klasselokale{
-    height: 300px;
+    height: 400px;
+    margin-left: 10%;
+}
+
+.klasselokale1{
+    height: 400px;
+    margin-right: 10%;
 }
 
 p{
     color: white;
+    margin-right: 10%;
+   
 }
+
+p{
+    color: white;
+    margin-left: 10%;
+   
+}
+
  h2{
     color: white;
+    text-align: center;
  }
+ h3{
+    color: white;
+ }
+
+ li{
+    font-size: medium;
+ }
+
+ .et{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ 
 
 

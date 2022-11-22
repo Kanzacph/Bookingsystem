@@ -1,8 +1,20 @@
+.local-buttons-container p{
+    text-align: left;
+    margin-left: 0%;
+}
+
 h1{
     color: white;
     
 }
 
-p{
+li{
     color: white;
+    font-size: large;
+}
+
+.mere{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }

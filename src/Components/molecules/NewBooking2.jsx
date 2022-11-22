@@ -1,26 +1,26 @@
+import { useNavigate } from 'react-router'
 import './NewBooking2.css'
 
 export default function NewBooking2(props){
+    const navigate = useNavigate();
+
+    function handleClick(route){
+        navigate(route);
+    }
     return(
-        <div>
+        <div className='local-buttons-container'>
             <h1>Liste over lokaler</h1>
-            <div className='local-buttons-container'>
+            <div>
             <div className='local-buttons'>
-                <p>
-                    Lokale 101
-                </p>
-                <p>
-                    Lokale 102
-                </p>
-                <p>
-                    Lokale 103
-                </p>
-                <p>
-                    Lokale 104
-                </p>
-                <p>
-                    Lokale 105
-                </p>
+
+                <li>Lokale 101</li>
+                <li>Lokale 102</li>
+                <li>Lokale 203</li>
+                <li>Lokale 204</li>
+                
+                <div className='mere' onClick={() => handleClick('/locals')}  >
+                <p>Læs om lokalerne her</p>
+                </div>
             </div>
             </div>
 

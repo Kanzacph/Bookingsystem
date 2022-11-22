@@ -6,6 +6,8 @@ body{
     flex-direction: row;
     margin-top: 75px;
     background-color: #00163b;
+    align-items: center;
+    justify-content: center;
 
 }
 .mybookings-text{

@@ -6,6 +6,7 @@ import MyBookings from "./MyBookings.jsx";
 import * as React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Locals from "./Locals";
+import Create3 from "./Create3";
 
 export default function MainContent(props) {
   return (
@@ -17,6 +18,7 @@ export default function MainContent(props) {
           <Route path='new-booking2' element={<NewBooking2 />}></Route>
           <Route path='my-bookings' element={<MyBookings />}></Route>
           <Route path='locals' element={<Locals />}></Route>
+          <Route path='Create3' element={<Create3 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

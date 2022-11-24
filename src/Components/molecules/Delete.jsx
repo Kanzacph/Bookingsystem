@@ -7,7 +7,7 @@ const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebase
 
 
 
-export default function DeleteBooking(){
+export default function DeleteBooking({bookings, setBookings}){
     return(
         console.log("clicked")
     );

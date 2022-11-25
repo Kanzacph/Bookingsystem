@@ -33,7 +33,7 @@ export default function CreateBooking({ bookings, setBookings }) {
       <main>
         {isError && <p> Der er sket en uventet fejl, prøv igen senere.</p>}
         {bookings.map((booking) => {
-          return <SingleBooking date={booking.date} room={booking.room} />;
+          return <SingleBooking booking={booking} id={booking.id} />;
         })}
       </main>
     );

@@ -1,20 +1,44 @@
 // Kanza
+import { useState } from "react";
 import changeicon from "../atoms/change-ikon.png";
 import deleteicon from "../atoms/delete-ikon.png";
 import DeleteBooking from "./Delete";
 import UpdateBooking from "./Update";
 
-export default function SingleBooking({ date, room }) {
-    return (
-      <div> <div className="mybookings-boks2">
+
+export default function SingleBooking({ booking }) {
+
+
+  const deleteBooking = async() => {
+    
+      const response = await fetch(
+      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/${booking.id}.json`,
+        {
+          method: "DELETE",
+          body: JSON.stringify(booking),
+        }
+        );
+  }
+
+  const changeBooking = async() => {
+
+
+
+  }
+  
+  
+  return (
+      <div> 
+        
+        <div className="mybookings-boks2">
       <div className="myboookings-boks1">
           <div className="mybookings-date">
               <h1>
-                  <div className="datoen">{date}</div>
+                  <div className="datoen">{booking.date}</div>
               </h1>
           </div>
           <div className="mybookings-info">
-              <p className="lokale">{room}</p>
+              <p className="lokale">{booking.room}</p>
               <p className="tidspunkt">08:00 - 12:00</p>
               <p className="pladser">40 Pladser</p>
           </div>
@@ -23,13 +47,13 @@ export default function SingleBooking({ date, room }) {
             <div className='changebooking-button'> 
           {/* <img className='changebooking-image' src={changeicon} alt="Changebooking"/>  */}
 
-            <button onClick={DeleteBooking}>change</button>
+          <UpdateBooking updateBooking={booking}/>
 
           </div>
 
             <div className='deletebooking-button'> 
           {/* <img className='deletebooking-image' src={deleteicon} alt="Deletebooking"/>  */}
-          <button onClick={DeleteBooking}>delete</button>
+          <button onClick={deleteBooking}>delete</button>
 
           </div>
 

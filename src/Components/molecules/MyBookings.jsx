@@ -4,6 +4,7 @@ import deleteicon from "../atoms/delete-ikon.png";
 import CreateBooking from "./Create.jsx";
 import UpdateBooking from "./Update.jsx";
 import { useState } from "react";
+import BookingForm from "./BookingForm.jsx"
 
 
 export default function MyBookings(props){
@@ -11,6 +12,8 @@ export default function MyBookings(props){
 
     return(
     <div className="mybookings-container">
+                <BookingForm/>
+
 
         <div className="mybookings-elements">
 
@@ -20,6 +23,7 @@ export default function MyBookings(props){
         </div>
 
         <CreateBooking bookings={bookings} setBookings={setBookings} />
+        
 
 
         </div>

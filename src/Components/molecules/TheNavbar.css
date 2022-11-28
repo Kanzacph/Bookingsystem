@@ -1,16 +1,54 @@
 .App-header {
-    padding-top: 30px;
-    padding-left: 30px;
-   
-  }
-  .menuknap{
-    position: absolute;
-    top: 40px;
-    right: 20px;
-  }
-  .openmenu{
-    background-color: #00163b;
-    color: #f4f4f4;
-    font-size: 35px;
-    border: none;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo{
+  cursor: pointer;
+}
+.menuknap {
+}
+
+.menu-dropdown {
+  height: 100px;
+  width: 150px;
+  top: 50px;
+  right: 14px;
+  position: absolute;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+.menu-dropdown-overlay {
+  background-color: none;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.menu-dropdown-item{
+  color: black;
+  cursor: pointer;
+}
+
+.bullets{
+  list-style-type: none;
+  padding-inline-start: 10px;
+}
+
+.openmenu {
+  background-color: #00163b;
+  color: #f4f4f4;
+  font-size: 25px;
+  border: none;
+}
+
+.menuknap :hover{
+  cursor: pointer;
+}

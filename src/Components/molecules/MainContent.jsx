@@ -11,16 +11,14 @@ import BookingForm from "./BookingForm.jsx";
 export default function MainContent(props) {
   return (
     <div className="main-content-container">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Frontpage />}></Route>
-          <Route path='new-booking' element={<NewBooking />}></Route>
-          <Route path='new-booking2' element={<NewBooking2 />}></Route>
-          <Route path='my-bookings' element={<MyBookings />}></Route>
-          <Route path='locals' element={<Locals />}></Route>
-          <Route path='bookingform' element={<BookingForm />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Frontpage />}></Route>
+        <Route path="new-booking" element={<NewBooking />}></Route>
+        <Route path="new-booking2" element={<NewBooking2 />}></Route>
+        <Route path="my-bookings" element={<MyBookings />}></Route>
+        <Route path="locals" element={<Locals />}></Route>
+        <Route path="bookingform" element={<BookingForm />}></Route>
+      </Routes>
     </div>
   );
 }

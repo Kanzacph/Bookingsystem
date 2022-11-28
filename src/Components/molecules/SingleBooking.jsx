@@ -12,7 +12,7 @@ export default function SingleBooking({ booking }) {
   const deleteBooking = async() => {
     
       const response = await fetch(
-      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/${booking.id}.json`,
+      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${booking.id}.json`,
         {
           method: "DELETE",
           body: JSON.stringify(booking),

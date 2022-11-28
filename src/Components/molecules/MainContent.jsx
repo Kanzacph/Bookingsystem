@@ -4,7 +4,7 @@ import NewBooking from "./NewBooking.jsx";
 import NewBooking2 from "./NewBooking2.jsx";
 import MyBookings from "./MyBookings.jsx";
 import * as React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Locals from "./Locals";
 import BookingForm from "./BookingForm.jsx";
 

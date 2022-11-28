@@ -23,7 +23,7 @@ export default function BookingForm(){
       console.log(booking);
 
       const response = await fetch(
-        "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/.json",
+        "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings.json",
         {
           method: "POST",
           body: JSON.stringify(booking),

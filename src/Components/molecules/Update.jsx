@@ -9,7 +9,7 @@ import "./SingleBooking.css";
 
 
 
-const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/.json";
+const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings.json";
 
 export default function UpdateBooking({ updateBooking }) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -23,7 +23,7 @@ export default function UpdateBooking({ updateBooking }) {
         console.log(booking);
   
         const response = await fetch(
-          `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/${updateBooking.id}/.json`,
+          `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${updateBooking.id}/.json`,
           {
             method: "PUT",
             body: JSON.stringify(booking),

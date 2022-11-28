@@ -1,0 +1,7 @@
+.change-button, .delete-button{
+    background: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+}
+

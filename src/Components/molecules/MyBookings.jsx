@@ -12,15 +12,19 @@ export default function MyBookings(props){
 
     return(
     <div className="mybookings-container">
-                <BookingForm/>
+        
+                
 
 
         <div className="mybookings-elements">
+       
 
             <div className="mybookings-text">
         <h1>Dine Bookinger</h1>
         <p>Her kan du finde dine bookinger, redigere og evt. slette bookinger</p>
         </div>
+
+        <div className="inputfelter"><BookingForm/></div>
 
         <CreateBooking bookings={bookings} setBookings={setBookings} />
         

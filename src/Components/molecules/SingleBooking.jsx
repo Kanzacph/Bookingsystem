@@ -45,15 +45,13 @@ export default function SingleBooking({ booking }) {
           <div className="mybookings-buttons">
 
             <div className='changebooking-button'> 
-          {/* <img className='changebooking-image' src={changeicon} alt="Changebooking"/>  */}
 
           <UpdateBooking updateBooking={booking}/>
 
           </div>
 
             <div className='deletebooking-button'> 
-          {/* <img className='deletebooking-image' src={deleteicon} alt="Deletebooking"/>  */}
-          <button onClick={deleteBooking}>delete</button>
+          <button onClick={deleteBooking} className="delete-button"><img className="deletebooking-image"src={deleteicon}/></button>
 
           </div>
 

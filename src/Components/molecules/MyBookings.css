@@ -80,4 +80,32 @@ body{
     padding: 20px;
 }
 
+.inputfelter{
+display: flex;
+justify-content: center;
+}
 
+.Lokale-felt, .Dato-felt{
+    color: white;
+    text-align: center;
+}
+
+.Lokale-felt, .Dato-felt > label{
+    font-weight: bold;
+}
+
+.submit-felt{
+   display: flex;
+   justify-content: center;
+}
+
+.Opret-button{
+    border: solid 2.5px #FBB040;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight:600;
+}

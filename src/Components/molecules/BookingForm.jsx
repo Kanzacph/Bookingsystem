@@ -37,30 +37,30 @@ console.log(result);
     return(
         <form>
         <div className="Lokale-felt">
-        <label>Lokale:</label>
+        <label>Lokale:</label><br/>
         <input
           type="text"
-          placeholder="Lokale"
+          placeholder="Lokale fx: 2.64"
           name="room"
           //value={room}
           onChange={handleChange}
         />
-        </div>
+        </div><br/>
 
         <div className="Dato-felt">
-            <label>Dato:</label>
+            <label>Dato:</label><br/>
             <input 
             type="text" 
-            placeholder="Dato"
+            placeholder="Dato fx: 12. November"
             name="date"
             //value={date}
             onChange={handleChange}
         />
-        </div>
+        </div><br/>
 
-        <div>
-        <button onClick={handleSubmit}>Opret booking</button>
-      </div>
+        <div className="submit-felt">
+        <button onClick={handleSubmit} className="Opret-button">Opret booking</button>
+      </div><br/>
 
         </form>
 

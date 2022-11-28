@@ -4,6 +4,9 @@ import { transformToArray } from "./firebase-utils.js";
 import SingleBooking from "./SingleBooking.jsx";
 import BookingForm from "./BookingForm.jsx";
 import Modal from "react-modal";
+import changeicon from "../atoms/change-ikon.png";
+import "./SingleBooking.css";
+
 
 
 const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/.json";
@@ -86,7 +89,7 @@ export default function UpdateBooking({ updateBooking }) {
 
           {/* <BookingForm setBookings={setBookings} /> */}
         </Modal>
-        <button onClick={openModal}>Update your booking</button>
+        <button onClick={openModal} className="change-button"><img className="changebooking-image"src={changeicon}/></button>
       </header>
     );
   }

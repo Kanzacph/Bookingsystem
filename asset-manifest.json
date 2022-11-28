@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Bookingsystem/static/css/main.b4399e43.css",
-    "main.js": "/Bookingsystem/static/js/main.d92c1e0c.js",
+    "main.js": "/Bookingsystem/static/js/main.cf460fc8.js",
     "static/js/787.5cbf3123.chunk.js": "/Bookingsystem/static/js/787.5cbf3123.chunk.js",
     "static/media/klasselokale.png": "/Bookingsystem/static/media/klasselokale.316d57b5f8599d830cbe.png",
     "static/media/logo.svg": "/Bookingsystem/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Bookingsystem/index.html",
     "main.b4399e43.css.map": "/Bookingsystem/static/css/main.b4399e43.css.map",
-    "main.d92c1e0c.js.map": "/Bookingsystem/static/js/main.d92c1e0c.js.map",
+    "main.cf460fc8.js.map": "/Bookingsystem/static/js/main.cf460fc8.js.map",
     "787.5cbf3123.chunk.js.map": "/Bookingsystem/static/js/787.5cbf3123.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4399e43.css",
-    "static/js/main.d92c1e0c.js"
+    "static/js/main.cf460fc8.js"
   ]
 }

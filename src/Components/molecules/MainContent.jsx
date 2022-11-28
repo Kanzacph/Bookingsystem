@@ -4,14 +4,14 @@ import NewBooking from "./NewBooking.jsx";
 import NewBooking2 from "./NewBooking2.jsx";
 import MyBookings from "./MyBookings.jsx";
 import * as React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Locals from "./Locals";
 import BookingForm from "./BookingForm.jsx";
 
 export default function MainContent(props) {
   return (
     <div className="main-content-container">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Frontpage />}></Route>
           <Route path='new-booking' element={<NewBooking />}></Route>
@@ -20,7 +20,7 @@ export default function MainContent(props) {
           <Route path='locals' element={<Locals />}></Route>
           <Route path='bookingform' element={<BookingForm />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

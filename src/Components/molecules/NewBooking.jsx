@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Scheduler from "./Scheduler.js";
 import "./NewBooking.css";
 import './firebase-utils';
 

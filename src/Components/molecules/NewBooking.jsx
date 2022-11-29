@@ -3,25 +3,37 @@ import "./NewBooking.css";
 import './firebase-utils';
 
 export default function NewBooking(props) {
-
-    const data = [
-        {
-          start_date: "2022-23-11 6:00",
-          end_date: "2022-23-11 8:00",
-          text: "Event 1",
-          id: 1,
-        },
-        {
-          start_date: "2022-25-11 10:00",
-          end_date: "2022-25-11 18:00",
-          text: "Event 2",
-          id: 2,
-        },
-      ];
-
   return (
-      <div className="scheduler-container">
-        <Scheduler events={data} />
-      </div>
+    <div> 
+      
+      <form action="">
+        <label for="birthday:"></label>
+        <input type="date" id="birthday" name="birthday" />
+        <input type="submit" />
+      </form>
+
+      <div className="mybookings-boks2">
+    <div className="myboookings-boks1">
+        <div className="mybookings-date">
+            <h1>
+                <div className="datoen"></div>
+            </h1>
+        </div>
+        <div className="mybookings-info">
+            <p className="lokale"></p>
+            <p className="tidspunkt">08:00 - 12:00</p>
+            <p className="pladser">40 Pladser</p>
+        </div>
+    </div>
+
+
+</div> 
+
+    </div>
+
+    
   );
+
+
+ 
 }

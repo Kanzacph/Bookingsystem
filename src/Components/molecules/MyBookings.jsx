@@ -1,4 +1,4 @@
-import "./MyBookings.css";
+import "./CSS/MyBookings.css";
 import changeicon from "../atoms/change-ikon.png";
 import deleteicon from "../atoms/delete-ikon.png";
 import CreateBooking from "./Create.jsx";

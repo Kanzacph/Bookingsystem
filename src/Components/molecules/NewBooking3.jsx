@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router'
-import './NewBooking3.css'
+import './CSS/NewBooking3.css'
 
 
 export default function NewBooking3(){
@@ -9,25 +9,30 @@ export default function NewBooking3(){
         navigate(route);
     }
     return(
-        <div className='local-buttons-container'>
-            <h1>Booking</h1>
+        <div className='makebooking-container'>
+            <h1>Book lokale</h1>
+            
             <div>
-            <div className='local-buttons'>
-                <h2>Liste over lokaler</h2>
-                <li>Lokale 101</li>
-                <li>Lokale 102</li>
-                <li>Lokale 203</li>
-                <li>Lokale 204</li>
-                
-                <div className='mere' onClick={() => handleClick('/locals')}  >
-                <p>Læs om lokalerne her</p>
+                <div className='mere-link-button' onClick={() => handleClick('/locals')}  >
+                    <p>Læs om lokalerne her</p>
+                    
                 </div>
-            </div>
-            </div>
 
-            
+                <form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"></input>
+  <input type="submit"></input>
+</form>   
 
+                
+            </div>
             
+    
+
         </div>
-    )
+
+        
+
+        
+    );
 }

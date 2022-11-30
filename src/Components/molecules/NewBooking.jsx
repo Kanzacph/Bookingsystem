@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./NewBooking.css";
+import "./CSS/NewBooking.css";
 import './firebase-utils';
 
 export default function NewBooking(props) {

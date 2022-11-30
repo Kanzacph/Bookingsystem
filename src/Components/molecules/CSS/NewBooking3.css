@@ -1,0 +1,19 @@
+.local-buttons{
+    display: flex;
+}
+
+.local-buttons > h2{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.mere-link-button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.kalender-area{
+    background-color: blue;
+}

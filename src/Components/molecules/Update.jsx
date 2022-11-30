@@ -5,7 +5,7 @@ import SingleBooking from "./SingleBooking.jsx";
 import BookingForm from "./BookingForm.jsx";
 import Modal from "react-modal";
 import changeicon from "../atoms/change-ikon.png";
-import "./SingleBooking.css";
+import "./CSS/SingleBooking.css";
 
 
 

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router'
-import './NewBooking2.css'
+import './CSS/NewBooking2.css'
 
 export default function NewBooking2(props){
     const navigate = useNavigate();

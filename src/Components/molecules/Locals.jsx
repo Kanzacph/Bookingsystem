@@ -1,4 +1,4 @@
-import './Locals.css'
+import './CSS/Locals.css'
 import klasselokale from '../atoms/klasselokale.png'
 
 

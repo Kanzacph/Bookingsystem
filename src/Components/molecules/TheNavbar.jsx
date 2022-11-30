@@ -1,6 +1,6 @@
 import cphlogo from "../atoms/cphlogo.png";
 import { useState } from "react";
-import "./TheNavbar.css";
+import "./CSS/TheNavbar.css";
 import Modal from "react-modal";
 import { useNavigate } from "react-router-dom";
 

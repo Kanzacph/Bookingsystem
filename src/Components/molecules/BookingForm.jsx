@@ -1,4 +1,4 @@
-import "./BookingForm.css";
+import "./CSS/BookingForm.css";
 import { useState } from "react";
 import SingleBooking from "./SingleBooking.jsx";
 // setBookings

@@ -1,11 +1,31 @@
-.local-buttons-container p{
-    text-align: left;
-    margin-left: 0%;
+.h1{
+    display: flex;
+    justify-content: center;
 }
 
-.local-buttons{
-    margin-left: 3%;
+
+
+.local-buttons-container{
+    display: flex;
+    flex-direction: column;
+
 }
+
+.local-buttons > li{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.mere p{
+    text-align: left;
+    margin-left: 0%;
+
+
+}
+
+
 
 h1{
     color: white;
@@ -16,6 +36,7 @@ h1{
 li{
     color: white;
     font-size: large;
+ 
 }
 
 .mere{
@@ -23,3 +44,4 @@ li{
     font-weight: bold;
     cursor: pointer;
 }
+

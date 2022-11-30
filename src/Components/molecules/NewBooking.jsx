@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { transformToArray } from "./firebase-utils";
-import "./NewBooking.css";
-import "./Newbooking_singlebooking";
+import "./CSS/NewBooking.css";
+
 
 export default function NewBooking(props) {
   const [selectedDate, setSelectedDate] = useState('');

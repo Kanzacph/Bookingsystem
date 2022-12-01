@@ -4,9 +4,14 @@ import changeicon from "../atoms/change-ikon.png";
 import deleteicon from "../atoms/delete-ikon.png";
 import DeleteBooking from "./Delete";
 import UpdateBooking from "./Update";
+import NewBooking3 from "./NewBooking3";
+import { useEffect} from "react";
 
 
 export default function SingleBooking({ booking }) {
+  const [selectedDate, setSelectedDate] = useState('');
+  const [availableRooms, setAvailableRooms] = useState([]);
+  const [timeslot, setTimeslot] = useState("");
 
 
   const deleteBooking = async() => {
@@ -20,11 +25,13 @@ export default function SingleBooking({ booking }) {
         );
   }
 
-  const changeBooking = async() => {
+  
+
+  // const changeBooking = async() => {
 
 
 
-  }
+  // }
   
   
   return (
@@ -39,7 +46,7 @@ export default function SingleBooking({ booking }) {
           </div>
           <div className="mybookings-info">
               <p className="lokale">{booking.room}</p>
-              <p className="tidspunkt">08:00 - 12:00</p>
+              <p className="tidspunkt">{booking.time}</p>
               <p className="pladser">40 Pladser</p>
           </div>
           <div className="mybookings-buttons">

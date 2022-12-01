@@ -5,7 +5,8 @@ import SingleBooking from "./SingleBooking.jsx";
 export default function BookingForm(){
     const [booking, setBooking]= useState({
       room: "",
-      date: ""
+      date: "",
+      time: "",
     })  
 
     const handleChange = (event) => {

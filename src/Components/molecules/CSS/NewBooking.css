@@ -22,7 +22,7 @@ form{
   text-align: right;
   height: 40px;
   width: 130px;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-right: 5px;
   background-size: 20px;
   background-origin: content-box;
@@ -33,4 +33,21 @@ form{
     border:1px solid #fbb040;
     background-color: #00163b;
     color: #fbb040;
+}
+
+.newboooking {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    background: rgb(217, 217, 217, 20%);
+    background-color: rgb(217, 217, 217, 20%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+}
+
+.date{
+    width: 40%;
 }

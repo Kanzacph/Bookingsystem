@@ -41,16 +41,16 @@ export default function NewBooking(props) {
 
       {availableRooms.map((room) => {
         return (
-          <div className="mybookings-boks2">
-            <div className="myboookings-boks1">
+          <div className="mybookingsBox">
+            <div className="newboooking">
               <div className="mybookings-date">
                 <h1>
-                  <div className="datoen">{room.id}</div>
+                  <div className="room">{room.id}</div>
                 </h1>
               </div>
               <div className="mybookings-info">
-                <p className="lokale">{selectedDate}</p>
-                <p className="pladser">{room.seats}</p>
+                <p className="date">Dato {selectedDate}</p>
+                <p className="seats">Pladser {room.seats}</p>
               </div>
             </div>
           </div>

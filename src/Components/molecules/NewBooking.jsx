@@ -49,7 +49,7 @@ export default function NewBooking(props) {
                 </h1>
               </div>
               <div className="mybookings-info">
-                <p className="date">Dato {selectedDate}</p>
+                <p className="date">Dato <br /> {selectedDate}</p>
                 <p className="seats">Pladser {room.seats}</p>
               </div>
             </div>

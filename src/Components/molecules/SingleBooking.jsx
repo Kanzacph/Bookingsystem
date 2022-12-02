@@ -40,7 +40,7 @@ export default function SingleBooking({ booking }) {
           <div className="mybookings-info">
               <p className="lokale">{booking.room}</p>
               <p className="tidspunkt">{booking.time}</p>
-              <p className="type">Type <br /> {room.type}</p>
+              <p className="pladser">40 Pladser</p>
           </div>
           <div className="mybookings-buttons">
 

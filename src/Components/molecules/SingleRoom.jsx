@@ -42,6 +42,7 @@ export default function SingleRoom({room, selectedDate}) {
                 <div className="mybookings-info">
                     <p className="date">Dato <br /> {selectedDate}</p>
                     <p className="seats">Pladser {room.seats}</p>
+                    <p className="type">Type <br /> {room.type}</p>
                 </div>
 
                 <div className="choose-time">

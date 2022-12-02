@@ -10,9 +10,9 @@ export default function BookingModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+      <button  className = "Opret-button" onClick={handleShow}>
+        Opret booking
+      </button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

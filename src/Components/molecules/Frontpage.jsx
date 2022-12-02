@@ -16,7 +16,7 @@ export default function Frontpage(props) {
             <h1>Vælg næste trin</h1>
             <h3>Vil du booke et nyt lokale eller se dine bookinger</h3>
             <div className='frontpage-button-container'>
-                <div className='frontpage-button'onClick={() => handleClick('/new-booking2')}>
+                <div className='frontpage-button'onClick={() => handleClick('/new-booking')}>
                      <img className='images' src={Kalender} alt="Kalender"/> 
                      <p>
                         Book lokale

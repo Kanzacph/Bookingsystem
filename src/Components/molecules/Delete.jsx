@@ -1,4 +1,3 @@
-// Kanza
 import { useEffect, useState } from "react";
 import { transformToArray } from "./firebase-utils.js";
 import SingleBooking from "./SingleBooking.jsx";

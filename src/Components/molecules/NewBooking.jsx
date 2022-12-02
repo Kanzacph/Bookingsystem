@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import { useNavigate } from 'react-router'
+import { useEffect, useState } from "react";
 import { transformToArray } from "./firebase-utils";
-import "./CSS/NewBooking.css";
+import './CSS/NewBooking.css'
+import SingleRoom from './SingleRoom';
 
 
-export default function NewBooking(props) {
-  const [selectedDate, setSelectedDate] = useState('');
-  const [availableRooms, setAvailableRooms] = useState([]);
+export default function NewBooking(){
+    const navigate = useNavigate();
+    const [selectedDate, setSelectedDate] = useState('');
+    const [availableRooms, setAvailableRooms] = useState([]);
 
   const getRooms = async () => {
     const response = await fetch(
@@ -22,9 +25,27 @@ export default function NewBooking(props) {
     getRooms();
   };
 
-  return (
-    <div className="booking">
+    function handleClick(route){
+        navigate(route);
+    }
+
+    return(
+        <div className="booking">
       <h1>Book et lokale</h1>
+
+      <div className='local-buttons-container'>
+                    <li>Lokale 101</li>
+                    <li>Lokale 102</li>
+                    <li>Lokale 203</li>
+                    <li>Lokale 204</li>
+
+            <div className='mere' onClick={() => handleClick('/locals')}  >
+                <p>Læs om lokalerne her</p>
+            </div>
+            </div>
+
+
+
       <div className="calender">
         <form action="">
           <div>
@@ -37,25 +58,16 @@ export default function NewBooking(props) {
             />
           </div>
         </form>
+
       </div>
 
       {availableRooms.map((room) => {
-        return (
-          <div className="mybookingsBox">
-            <div className="newboooking">
-              <div className="mybookings-date">
-                <h1>
-                  <div className="room">{room.id}</div>
-                </h1>
-              </div>
-              <div className="mybookings-info">
-                <p className="date">Dato <br /> {selectedDate}</p>
-                <p className="seats">Pladser {room.seats}</p>
-              </div>
-            </div>
-          </div>
-        );
+        return <SingleRoom room={room} selectedDate={selectedDate} />
       })}
+
     </div>
-  );
+        
+
+        
+    );
 }

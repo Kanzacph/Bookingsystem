@@ -1,4 +1,5 @@
 import {useState} from "react"
+import BookingModal from "./BookingForm"
 
 export default function SingleRoom({room, selectedDate}) {
     console.log(room)
@@ -46,17 +47,18 @@ export default function SingleRoom({room, selectedDate}) {
                 </div>
 
                 <div className="choose-time">
-                    <label htmlFor="timeslots">Choose time:</label>
 
                     <select id="timeslots" value={timeslot} onChange={handleChange}>
                         <option disabled value={""}>
-                            -- Choose time --
+                            Vælg tidspunkt
                         </option>
                         <option value="8.30 - 12.00">8.30 - 12.00</option>
                         <option value="12.30 - 16.00">12.30 - 16.00</option>
                     </select>
                 </div>
-                <button onClick={handleSubmit} className="Opret-button">Opret booking</button>
+                {/* <button onClick={handleSubmit} className="Opret-button">Opret booking</button> */}
+                <BookingModal />
+                
             </div>
       </div>
     )

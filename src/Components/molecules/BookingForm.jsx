@@ -35,35 +35,37 @@ console.log(result);
     };
 
     return(
-        <form>
-        <div className="Lokale-felt">
-        <label>Lokale:</label><br/>
-        <input
-          type="text"
-          placeholder="Lokale fx: 2.64"
-          name="room"
-          //value={room}
-          onChange={handleChange}
-        />
-        </div><br/>
+//         <form>
+//         <div className="Lokale-felt">
+//         <label>Lokale:</label><br/>
+//         <input
+//           type="text"
+//           placeholder="Lokale fx: 2.64"
+//           name="room"
+//           value={room}
+//           onChange={handleChange}
+//         />
+//         </div><br/>
 
-        <div className="Dato-felt">
-            <label>Dato:</label><br/>
-            <input 
-            type="text" 
-            placeholder="Dato fx: 12. November"
-            name="date"
-            //value={date}
-            onChange={handleChange}
-        />
-        </div><br/>
+//         <div className="Dato-felt">
+//             <label>Dato:</label><br/>
+//             <input 
+//             type="text" 
+//             placeholder="Dato fx: 12. November"
+//             name="date"
+//             value={date}
+//             onChange={handleChange}
+//         />
+//         </div><br/>
+// </form>
 
-        <div className="submit-felt">
+    <main>
+      <div className="submit-felt">
+        {/* Vores bekræft knap */}
+        {/* <button onClick={handleSubmit} className="Opret-button">Bekræft</button> */}
         <button onClick={handleSubmit} className="Opret-button">Opret booking</button>
       </div><br/>
-
-        </form>
-
+    </main>
         
 
 

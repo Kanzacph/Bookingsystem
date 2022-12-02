@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { transformToArray } from "./firebase-utils";
 import './CSS/NewBooking.css'
 import SingleRoom from './SingleRoom';
+// import BookingModal from './BookingModal';
 
 
 export default function NewBooking(){

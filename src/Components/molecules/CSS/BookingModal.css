@@ -1,5 +1,5 @@
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -18,5 +18,28 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 20%;
+    border-radius: 15px;
+  }
+
+  .Modal-titel{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
   }

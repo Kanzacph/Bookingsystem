@@ -79,3 +79,24 @@ form{
 .type{
     width: 40%;
 }
+
+.local-buttons-container{
+    margin-left: 30px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.mere{
+    margin-left: 30px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.knap{
+    display: flex;
+    cursor: pointer;
+}

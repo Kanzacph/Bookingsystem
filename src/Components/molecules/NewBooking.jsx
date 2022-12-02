@@ -31,7 +31,7 @@ export default function NewBooking(){
 
     return(
         <div className="booking">
-      <h1>Book et lokale</h1>
+      <h1>Book lokale</h1>
 
       <div className='local-buttons-container'>
                     <li>Lokale 101</li>
@@ -39,7 +39,7 @@ export default function NewBooking(){
                     <li>Lokale 203</li>
                     <li>Lokale 204</li>
 
-            <div className='mere' onClick={() => handleClick('/locals')}  >
+            <div className='knap' onClick={() => handleClick('/locals')}  >
                 <p>Læs om lokalerne her</p>
             </div>
             </div>

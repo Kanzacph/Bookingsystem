@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
+import './CSS/BookingModal.css'
 
 export default function BookingModal() {
   const [show, setShow] = useState(false);

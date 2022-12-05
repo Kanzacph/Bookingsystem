@@ -77,10 +77,14 @@ form{
 }
 
 .time{
-    width: 50%;
+    width: 40%;
 }
 
 .type{
+    width: 40%;
+}
+
+.seats{
     width: 40%;
 }
 

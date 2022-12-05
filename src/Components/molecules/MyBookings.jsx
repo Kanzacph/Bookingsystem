@@ -9,7 +9,7 @@ export default function MyBookings() {
 
   const getBookings = async () => {
     const response = await fetch(
-      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/booking/.json`,
+      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/.json`,
       {
         method: "GET",
       }
@@ -38,12 +38,12 @@ export default function MyBookings() {
       <div className="mybookingsBox">
         <div>
           <div>
-            {bookings.map((booking) => {
+            {bookings.map((bookings) => {
               return (
                 <Booking
-                  room={booking.room}
-                  date={booking.date}
-                  timeslot={booking.timeslot}
+                  room={bookings.room}
+                  date={bookings.date}
+                  timeslot={bookings.timeslot}
                 />
               );
             })}

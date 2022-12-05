@@ -38,12 +38,13 @@ export default function MyBookings() {
       <div className="mybookingsBox">
         <div>
           <div>
-            {bookings.map((bookings) => {
+            {bookings.map((booking) => {
               return (
                 <Booking
-                  room={bookings.room}
-                  date={bookings.date}
-                  timeslot={bookings.timeslot}
+                  room={booking.room}
+                  date={booking.date}
+                  timeslot={booking.timeslot}
+                  id={booking.id}
                 />
               );
             })}

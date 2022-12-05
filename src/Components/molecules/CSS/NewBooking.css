@@ -76,6 +76,10 @@ form{
     width: 40%;
 }
 
+.time{
+    width: 50%;
+}
+
 .type{
     width: 40%;
 }
@@ -100,3 +104,17 @@ h1{
     display: flex;
     cursor: pointer;
 }
+
+.mybookings-date{
+    color: white;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    padding: 20px; 
+    padding-right: 40px; 
+    border-right: 2px solid rgb(251, 176, 64, 43%); 
+    
+}
+
+
+

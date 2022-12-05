@@ -66,10 +66,6 @@ export default function NewBooking(){
         return <SingleRoom room={room} selectedDate={selectedDate} />
       })}
 
-      {availableRooms.map((room) => {
-        return <BookingModal room={room} selectedDate={selectedDate} />
-      })}
-
     </div>
         
 

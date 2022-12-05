@@ -1,41 +1,55 @@
 import "./CSS/MyBookings.css";
-import changeicon from "../atoms/change-ikon.png";
-import deleteicon from "../atoms/delete-ikon.png";
-import CreateBooking from "./Create.jsx";
-import UpdateBooking from "./Update.jsx";
 import { useState } from "react";
-import BookingForm from "./BookingForm.jsx"
-import MySingleBooking from "./MySingleBooking";
+import Booking from "./Booking";
+import { transformToArray } from "./firebase-utils";
+import { useEffect } from "react";
 
-const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/booking.json"
+export default function MyBookings() {
+  const [bookings, setBookings] = useState([]);
 
-export default function MyBookings(){
-    const [bookings, setBookings] = useState([{room: 2, date: "2021-01-01", timeslot:"8.30"}]);
+  const getBookings = async () => {
+    const response = await fetch(
+      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/booking/.json`,
+      {
+        method: "GET",
+      }
+    );
+    setBookings(transformToArray(await response.json()));
+    console.log(bookings);
+  };
 
-    // Skrive en useEffect, som henter alt data fra url
-    // transformToArray
-    // setBookings(asArray)
-    
-    return (
-        <>
-        <div className="mybookings-container">
-            <div className="mybookings-elements">
-                <div className="mybookings-text">
-                    <h1>Dine Bookinger</h1>
-                    <p>Her kan du finde dine bookinger, redigere og evt. slette bookinger</p>
-                </div>
-                {/* <div className="inputfelter">
-                    <BookingForm />
-                </div> */}
-                {/* <CreateBooking bookings={bookings} setBookings={setBookings} /> */}
-            </div>
+  useEffect(() => {
+    getBookings();
+  }, []);
 
+  return (
+    <>
+      <div className="mybookings-container">
+        <div className="mybookings-elements">
+          <div className="mybookings-text">
+            <h1>Dine Bookinger</h1>
+            <p>
+              Her kan du finde dine bookinger, redigere og evt. slette bookinger
+            </p>
+          </div>
         </div>
+      </div>
+
+      <div className="mybookingsBox">
         <div>
-            {bookings.map((mySingleBooking) => {
-                return <MySingleBooking room={mySingleBooking.room} date={mySingleBooking.date} timeslot={mySingleBooking.timeslot} />
+          <div>
+            {bookings.map((booking) => {
+              return (
+                <Booking
+                  room={booking.room}
+                  date={booking.date}
+                  timeslot={booking.timeslot}
+                />
+              );
             })}
+          </div>
         </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }

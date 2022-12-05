@@ -9,6 +9,7 @@ export default function BookingModal({time, room, selectedDate}) {
   const handleShow = () => setShow(true);
   
   const handleSubmit = async (e) => {
+
     e.preventDefault();
     const booking = {
         date: selectedDate,
@@ -25,6 +26,7 @@ export default function BookingModal({time, room, selectedDate}) {
     );
     const result = await response.json();
     console.log(result);
+    handleClose();
     
 };
 

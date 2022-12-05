@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { transformToArray } from "./firebase-utils";
 import './CSS/NewBooking.css'
 import SingleRoom from './SingleRoom';
-// import BookingModal from './BookingModal';
+import BookingModal from './BookingModal';
 
 
 export default function NewBooking(){
@@ -64,6 +64,10 @@ export default function NewBooking(){
 
       {availableRooms.map((room) => {
         return <SingleRoom room={room} selectedDate={selectedDate} />
+      })}
+
+      {availableRooms.map((room) => {
+        return <BookingModal room={room} selectedDate={selectedDate} />
       })}
 
     </div>

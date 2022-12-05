@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './CSS/BookingModal.css'
 
-export default function BookingModal() {
+export default function BookingModal({time, room, selectedDate}) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -19,8 +19,12 @@ export default function BookingModal() {
           <Modal.Title className='Modal-titel'>Bekræft denne booking</Modal.Title>
         </Modal.Header>
         <Modal.Body>
+       
+          <p className='bekraeft-info'>Tidspunkt: {time}</p>
+          <p className='bekraeft-info'>Lokale:{room.id}</p>
+          <p className='bekraeft-info'>Dato: {selectedDate.toString()}</p>
+
          
-          <p></p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

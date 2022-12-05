@@ -57,7 +57,7 @@ export default function SingleRoom({room, selectedDate}) {
                     </select>
                 </div>
                 {/* <button onClick={handleSubmit} className="Opret-button">Opret booking</button> */}
-                <BookingModal />
+                <BookingModal time={timeslot} room = {room} selectedDate = {selectedDate}/>
                 
             </div>
       </div>

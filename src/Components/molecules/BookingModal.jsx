@@ -7,6 +7,26 @@ export default function BookingModal({time, room, selectedDate}) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const booking = {
+        date: selectedDate,
+        timeslot: time,
+        room: room.id
+    }
+
+    const response = await fetch(
+    "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/booking.json",
+    {
+        method: "POST",
+        body: JSON.stringify(booking),
+    }
+    );
+    const result = await response.json();
+    console.log(result);
+    
+};
 
   return (
     <>
@@ -27,12 +47,14 @@ export default function BookingModal({time, room, selectedDate}) {
          
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose} className="Luk-modal">
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
+          <Button onClick={handleSubmit} className="Opret-button">
+            Bekræft
           </Button>
+
+          {/* <button onClick={handleSubmit} className="Opret-button">Opret booking</button> */}
         </Modal.Footer>
       </Modal>
     </>

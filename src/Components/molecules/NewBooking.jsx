@@ -66,6 +66,7 @@ export default function NewBooking(){
         return <SingleRoom room={room} selectedDate={selectedDate} />
       })}
 
+
     </div>
         
 

@@ -63,7 +63,7 @@ console.log(result);
       <div className="submit-felt">
         {/* Vores bekræft knap */}
         {/* <button onClick={handleSubmit} className="Opret-button">Bekræft</button> */}
-        <button onClick={handleSubmit} className="Opret-button">Opret booking</button>
+        {/* <button onClick={handleSubmit} className="Opret-button">Opret booking</button> */}
       </div><br/>
     </main>
         

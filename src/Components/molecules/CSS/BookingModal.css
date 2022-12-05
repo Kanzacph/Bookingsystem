@@ -47,3 +47,19 @@
   .bekraeft-info{
     color: black;
   }
+
+  .Bekraeft-modal{   
+    color: #fbb040;
+    font-size: 20px;
+    background-color: white;
+    border: #fbb040 solid 2px;
+    padding: 11px 20px;
+  }
+
+  .Luk-modal{
+    color: #fbb040;
+    font-size: 20px;
+    background-color: white;
+    border: #fbb040 solid 2px;
+    padding: 11px 20px;
+  }

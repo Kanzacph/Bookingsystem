@@ -17,7 +17,7 @@ export default function BookingModal({time, room, selectedDate}) {
     }
 
     const response = await fetch(
-    "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/booking.json",
+    "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings.json",
     {
         method: "POST",
         body: JSON.stringify(booking),
@@ -50,7 +50,7 @@ export default function BookingModal({time, room, selectedDate}) {
           <Button variant="secondary" onClick={handleClose} className="Luk-modal">
             Close
           </Button>
-          <Button onClick={handleSubmit} className="Opret-button">
+          <Button onClick={handleSubmit} className="Bekraeft-modal">
             Bekræft
           </Button>
 

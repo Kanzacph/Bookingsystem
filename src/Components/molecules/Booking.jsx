@@ -1,6 +1,5 @@
 import "./CSS/NewBooking.css";
 import update from "../atoms/update.png";
-import deleteButton from "../atoms/deleteButton.png";
 import Delete from "./Delete";
 
 export default function Booking({ timeslot, room, date, id }) {

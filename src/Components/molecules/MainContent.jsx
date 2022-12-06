@@ -15,7 +15,6 @@ export default function MainContent(props) {
         <Route path="new-booking" element={<NewBooking />}></Route>
         <Route path="my-bookings" element={<MyBookings />}></Route>
         <Route path="locals" element={<Locals />}></Route>
-        <Route path="bookingform" element={<BookingForm />}></Route>
       </Routes>
     </div>
   );

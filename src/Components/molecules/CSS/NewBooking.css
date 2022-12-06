@@ -16,7 +16,6 @@
 form{
     display: flex;
     flex-direction: row;
-    
 }
 
 .calender{
@@ -27,21 +26,21 @@ form{
 }
 
 .calender-img{
-  background: white url(../../atoms/Kalender.png) left no-repeat;
-  text-align: right;
+  background: url(../../atoms/Kalender.png) right no-repeat;
   height: 40px;
   width: 130px;
   margin-left: 30px;
-  margin-right: 5px;
   background-size: 20px;
-  background-origin: content-box;
   padding-left: 10px;
+  cursor: pointer;
 }
+
 
 .datepicker{
     border:1px solid #fbb040;
     background-color: #00163b;
     color: #fbb040;
+    cursor: pointer;
 }
 
 .mybookingsBox{
@@ -106,7 +105,7 @@ h1{
 }
 
 .knap:hover{
-background-color:#00163b;
+    background-color:#00163b;
 }
 
 .mybookings-date{

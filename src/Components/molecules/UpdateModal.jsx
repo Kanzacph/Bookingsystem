@@ -16,20 +16,20 @@ export default function UpdateModal({timeslot, room, date, id}){
   
     const handleUpdate = async (e) => {
       e.preventDefault();
-      // console.log(booking);
     
-  const response = await fetch(
+      const response = await fetch(
       `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${id}/.json`,
       {
           method: "PUT",
-          // Hele bookings objektet og indholdet deri
           body: JSON.stringify({timeslot: selectedTime, room: selectedRoom, date: selectedDate}),
       }
+
   );
+  window.location.reload();
+
 
   const result = await response.json();
     console.log(result);
-          // setBooking(booking);
 };
 
 

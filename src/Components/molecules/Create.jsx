@@ -1,7 +1,6 @@
 // Kanza
 import { useEffect, useState } from "react";
 import { transformToArray } from "./firebase-utils.js";
-import SingleBooking from "./SingleBooking.jsx";
 
 const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings.json";
 
@@ -29,13 +28,4 @@ export default function CreateBooking({ bookings, setBookings }) {
       getData();
     }, []);
   
-    return (
-      <main>
-        {isError && <p> Der er sket en uventet fejl, prøv igen senere.</p>}
-        {bookings.map((booking) => {
-          return <SingleBooking booking={booking} id={booking.id} />;
-        })}
-      </main>
-    );
-  }
   

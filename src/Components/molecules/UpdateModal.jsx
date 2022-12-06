@@ -107,10 +107,10 @@ const handleTime = (e) => {
 {/* Annuler og submitknap */}
             </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="secondary" onClick={handleClose} className="Luk-modal">
                 Annuller
             </Button>
-            <Button variant="primary" onClick={handleUpdate}>
+            <Button variant="primary" onClick={handleUpdate} className="Bekraeft-modal">
                 Bekræft
             </Button>
           </Modal.Footer>

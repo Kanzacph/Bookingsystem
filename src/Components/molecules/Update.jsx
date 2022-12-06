@@ -10,6 +10,7 @@ import update from "../atoms/update.png";
 
 export default function Update({updateBooking}){
 
+
     const handleUpdate = async (e) => {
             e.preventDefault();
             // console.log(booking);
@@ -18,7 +19,7 @@ export default function Update({updateBooking}){
             `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${updateBooking.id}/.json`,
             {
                 method: "PUT",
-                body: JSON.stringify(updateBooking),
+                body: JSON.stringify(),
             }
         );
 
@@ -28,9 +29,6 @@ export default function Update({updateBooking}){
     };
 
     
-    
-
-
     return(
 
        <div></div>

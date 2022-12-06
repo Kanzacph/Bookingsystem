@@ -4,11 +4,49 @@ import Modal from 'react-bootstrap/Modal';
 import { useState } from "react";
 import update from "../atoms/update.png";
 
-export default function UpdateModal(){
+export default function UpdateModal({timeslot, room, date, id}){
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [selectedDate, setSelectedDate] = useState(date);
+    const [selectedRoom, setSelectedRoom] = useState(room);
+    const [selectedTime, setSelectedTime] = useState(timeslot);
+
+
   
+    const handleUpdate = async (e) => {
+      e.preventDefault();
+      // console.log(booking);
+    
+  const response = await fetch(
+      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${id}/.json`,
+      {
+          method: "PUT",
+          // Hele bookings objektet og indholdet deri
+          body: JSON.stringify({timeslot: selectedTime, room: selectedRoom, date: selectedDate}),
+      }
+  );
+
+  const result = await response.json();
+    console.log(result);
+          // setBooking(booking);
+};
+
+
+const handleDate = (e) => {
+  setSelectedDate(e.target.value);
+};
+
+const handleRoom = (e) => {
+  setSelectedRoom(e.target.value);
+};
+
+const handleTime = (e) => {
+  setSelectedTime(e.target.value);
+};
+
+
+
     return (
       <>
 
@@ -26,7 +64,7 @@ export default function UpdateModal(){
 {/* Time */}
           <p className='bekraeft-info'>Tidspunkt: 
             <div className="change-time">
-                <select id="timeslots">
+                <select id="timeslots" defaultValue={timeslot} onChange={handleTime}>
                     <option value="8.30 - 12.00">8.30 - 12.00</option>
                     <option value="12.30 - 16.00">12.30 - 16.00</option>
                 </select>
@@ -37,7 +75,7 @@ export default function UpdateModal(){
  {/*Room  */}
           <p className='bekraeft-info'>Lokale:
             <div className="change-room">
-                <select id="rooms">
+                <select id="rooms" defaultValue={room} onChange={handleRoom}>
                     <option value="101">101</option>
                     <option value="102">102</option>
                     <option value="203">203</option>
@@ -58,7 +96,8 @@ export default function UpdateModal(){
                             type="date"
                             id="calender"
                             name="calender"
-                            // onChange={handleDate}
+                            defaultValue={date}
+                            onChange={handleDate}
                         />
                     </div>
                 </form>
@@ -71,7 +110,7 @@ export default function UpdateModal(){
             <Button variant="secondary" onClick={handleClose}>
                 Annuller
             </Button>
-            <Button variant="primary" onClick={handleClose}>
+            <Button variant="primary" onClick={handleUpdate}>
                 Bekræft
             </Button>
           </Modal.Footer>

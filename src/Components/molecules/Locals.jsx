@@ -15,7 +15,7 @@ export default function Locals(props){
                 <div className='et'>
                 <img className='klasselokale' src={klasselokale} alt="klasselokale" />
                     <p>
-                    Undervisningslokale ligger på 1. sal <br />
+                    Undervisningslokalet ligger på 1. sal <br />
                     <br />
                     Udstyr: <br />
                         - To whiteboards <br />
@@ -28,7 +28,10 @@ export default function Locals(props){
                     74 m2 <br />
                     <br />
                     Max kapacitet: <br />
-                    100 personer, 40 siddepladser
+                    100 personer, 40 siddepladser <br />
+                    <br />
+                    Type: <br />
+                    Klasselokale 
                     </p>
                 </div>
 
@@ -44,20 +47,23 @@ export default function Locals(props){
                 <div className='et'>
                
                     <p className='p2'>
-                    Undervisningslokale ligger på 1. sal <br />
+                    Undervisningslokalet ligger på 1. sal <br />
                     <br />
                     Udstyr: <br />
-                        - To whiteboards <br />
+                        - Tre whiteboards <br />
                         - To projektorer <br />
                         - Stikkontakter <br />
                         - Forlængerledniger <br />
                         - Mørklægningsgardiner <br />
                         <br />
                     Størrelse: <br />
-                    74 m2 <br />
+                    50 m2 <br />
                     <br />
                     Max kapacitet: <br />
-                    100 personer, 40 siddepladser
+                    70 personer, 30 siddepladser <br />
+                    <br />
+                    Type: <br />
+                    Klasselokale 
                     </p>
                     <img className='klasselokale1' src={klasselokale} alt="klasselokale" />
                 </div>
@@ -74,7 +80,7 @@ export default function Locals(props){
                 <div className='et'>
                 <img className='klasselokale' src={klasselokale} alt="klasselokale" />
                     <p>
-                    Undervisningslokale ligger på 1. sal <br />
+                    Undervisningslokalet ligger på 2. sal <br />
                     <br />
                     Udstyr: <br />
                         - To whiteboards <br />
@@ -84,10 +90,13 @@ export default function Locals(props){
                         - Mørklægningsgardiner <br />
                         <br />
                     Størrelse: <br />
-                    74 m2 <br />
+                    60 m2 <br />
                     <br />
                     Max kapacitet: <br />
-                    100 personer, 40 siddepladser
+                    75 personer, 35 siddepladser <br />
+                    <br />
+                    Type: <br />
+                    Klasselokale 
                     </p>
                 </div>
 
@@ -102,20 +111,75 @@ export default function Locals(props){
                 </div>
                 <div className='et'>
                     <p className='p2'>
-                    Undervisningslokale ligger på 1. sal <br />
+                    Undervisningslokalet ligger på 2. sal <br />
                     <br />
                     Udstyr: <br />
-                        - To whiteboards <br />
-                        - To projektorer <br />
+                        - Seks whiteboards <br />
+                        - Fire projektorer <br />
                         - Stikkontakter <br />
                         - Forlængerledniger <br />
                         - Mørklægningsgardiner <br />
                         <br />
                     Størrelse: <br />
-                    74 m2 <br />
+                    90 m2 <br />
                     <br />
                     Max kapacitet: <br />
-                    100 personer, 40 siddepladser
+                    80 personer, 50 siddepladser <br />
+                    <br />
+                    Type: <br />
+                    Klasselokale 
+                    </p>
+                    <img className='klasselokale1' src={klasselokale} alt="klasselokale" />
+                </div>
+
+                <div>
+                <h2>Lokale 208</h2> 
+                </div>
+                <div className='et'>
+                <img className='klasselokale' src={klasselokale} alt="klasselokale" />
+                    <p>
+                    Mødeloklaet ligger på 2. sal <br />
+                    <br />
+                    Udstyr: <br />
+                        - Et whiteboards <br />
+                        - En projektorer <br />
+                        - Stikkontakter <br />
+                        - Forlængerledniger <br />
+                        - Mørklægningsgardiner <br />
+                        <br />
+                    Størrelse: <br />
+                    20 m2 <br />
+                    <br />
+                    Max kapacitet: <br />
+                    15 personer, 10 siddepladser <br />
+                    <br />
+                    Type: <br />
+                    Mødelokale 
+                    </p>
+                </div>
+
+                <div>
+                <h2>Lokale 209</h2> 
+                </div>
+                <div className='et'>
+                    <p className='p2'>
+                    Mødelokalet ligger på 2. sal <br />
+                    <br />
+                    Udstyr: <br />
+                        - Et whiteboards <br />
+                        - En projektorer <br />
+                        - Stikkontakter <br />
+                        - Forlængerledniger <br />
+                        - Mørklægningsgardiner <br />
+                        <br />
+                    Størrelse: <br />
+                    25 m2 <br />
+                    <br />
+                    Max kapacitet: <br />
+                    18 personer, 12 siddepladser <br />
+                    <br />
+                    Type: <br />
+                    Mødelokale 
                     </p>
                     <img className='klasselokale1' src={klasselokale} alt="klasselokale" />
                 </div>

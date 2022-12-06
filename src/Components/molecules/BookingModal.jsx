@@ -32,9 +32,12 @@ export default function BookingModal({time, room, selectedDate}) {
 
   return (
     <>
-      <button  className = "Opret-button" onClick={handleShow}>
+    <div>
+    <button  className = "Opret-button" onClick={handleShow}>
         Opret booking
       </button>
+    </div>
+      
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header>

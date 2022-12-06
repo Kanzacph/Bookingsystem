@@ -1,3 +1,22 @@
+.choose-time{
+  margin-left: 15%;
+}
+.Opret-button{
+  border: solid 2.5px #FBB040;
+  width: 150px;
+  height: 50px;
+  background-color: #FBB040 ;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight:600;
+  margin-left: 10%;
+}
+
+.Opret-button:hover{
+background-color: transparent;
+}
+
 .modal {
     display: none; 
     position: fixed; /* Stay in place */

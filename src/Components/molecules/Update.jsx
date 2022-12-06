@@ -33,12 +33,7 @@ export default function Update({updateBooking}){
 
     return(
 
-
-        <div className="update-knap" onClick={handleUpdate}>
-            <img src={update} alt="update" />
-          </div>
-
-
+       <div></div>
     )
 
 }

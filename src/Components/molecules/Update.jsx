@@ -1,11 +1,57 @@
-// Kanza
-// import { useEffect, useState } from "react";
-// import { transformToArray } from "./firebase-utils.js";
 // import SingleBooking from "./SingleBooking.jsx";
 // import BookingForm from "./BookingForm.jsx";
 // import Modal from "react-modal";
 // import changeicon from "../atoms/change-ikon.png";
 // import "./CSS/SingleBooking.css";
+import { useEffect, useState } from "react";
+import { transformToArray } from "./firebase-utils.js";
+import update from "../atoms/update.png";
+
+
+export default function Update({updateBooking}){
+
+    const handleUpdate = async (e) => {
+            e.preventDefault();
+            // console.log(booking);
+          
+        const response = await fetch(
+            `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${updateBooking.id}/.json`,
+            {
+                method: "PUT",
+                // body: JSON.stringify(booking),
+            }
+        );
+
+        const result = await response.json();
+          console.log(result);
+                // setBooking(booking);
+    };
+
+    
+    
+
+
+    return(
+
+
+        <div className="update-knap" onClick={handleUpdate}>
+            <img src={update} alt="update" />
+          </div>
+
+
+    )
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

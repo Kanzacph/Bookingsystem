@@ -1,6 +1,7 @@
 import "./CSS/NewBooking.css";
 import update from "../atoms/update.png";
 import Delete from "./Delete";
+import Update from "./Update"
 
 export default function Booking({ timeslot, room, date, id }) {
   return (
@@ -17,7 +18,7 @@ export default function Booking({ timeslot, room, date, id }) {
 
         <div className="ud-knapper">
           <div className="update-knap">
-            <img src={update} alt="update" />
+            <Update/>
           </div>
 
           <div>

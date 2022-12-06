@@ -1,10 +1,9 @@
-// Kanza
 import { useEffect, useState } from "react";
 import { transformToArray } from "./firebase-utils.js";
 
 const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings.json";
 
-export default function CreateBooking({ bookings, setBookings }) {
+export default function CreateBooking({ setBookings }) {
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
   

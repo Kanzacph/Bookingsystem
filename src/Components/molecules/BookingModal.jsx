@@ -37,7 +37,7 @@ export default function BookingModal({time, room, selectedDate}) {
       </button>
 
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title className='Modal-titel'>Bekræft denne booking</Modal.Title>
         </Modal.Header>
         <Modal.Body>

@@ -18,7 +18,7 @@ export default function Update({updateBooking}){
             `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${updateBooking.id}/.json`,
             {
                 method: "PUT",
-                // body: JSON.stringify(booking),
+                body: JSON.stringify(updateBooking),
             }
         );
 

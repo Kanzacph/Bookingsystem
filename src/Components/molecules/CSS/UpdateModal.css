@@ -1,0 +1,67 @@
+.update-knap{
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    border-radius: 15px;
+  }
+
+  .Modal-titel{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .bekraeft-info{
+    color: black;
+    display: flex;
+    justify-content: left;
+  }
+
+  .Bekraeft-modal{   
+    color: #fbb040;
+    font-size: 20px;
+    background-color: white;
+    border: #fbb040 solid 2px;
+    padding: 11px 25px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .Luk-modal{
+    color: #fbb040;
+    font-size: 20px;
+    background-color: white;
+    border: #fbb040 solid 2px;
+    padding: 11px 25px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+  }

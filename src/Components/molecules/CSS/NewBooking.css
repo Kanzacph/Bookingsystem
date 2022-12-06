@@ -91,12 +91,22 @@ form{
 h1{
     text-align: center;
     color: white;
+    
 }
 
 .knap{
     display: flex;
     cursor: pointer;
-    margin-right: 80%;
+    border:1px solid #fbb040;
+    background-color: #fbb040;
+    color: white;
+    margin-top: 1%;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.knap:hover{
+background-color:#00163b;
 }
 
 .mybookings-date{

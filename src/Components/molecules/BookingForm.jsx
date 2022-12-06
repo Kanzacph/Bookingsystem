@@ -1,5 +1,4 @@
 import { useState } from "react";
-import SingleBooking from "./SingleBooking.jsx";
 // setBookings
 export default function BookingForm(){
     const [booking, setBooking]= useState({

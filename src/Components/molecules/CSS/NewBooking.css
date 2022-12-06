@@ -96,6 +96,7 @@ h1{
 .knap{
     display: flex;
     cursor: pointer;
+    margin-right: 80%;
 }
 
 .mybookings-date{

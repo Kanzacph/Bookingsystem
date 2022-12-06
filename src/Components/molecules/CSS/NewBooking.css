@@ -3,7 +3,6 @@
 }
 
 .local-buttons > h2{
-    background-color: blue;
     display: flex;
     justify-content: center;
 }
@@ -13,16 +12,6 @@
     justify-content: center;
     cursor: pointer;
 }
-
-.kalender-area{
-    background-color: blue;
-}
-
-/* .booking{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 
 form{
     display: flex;
@@ -129,6 +118,7 @@ h1{
 
 .update-knap{
    margin-bottom: 60%;
+   cursor: pointer;
 }
 
 .delete-knap{

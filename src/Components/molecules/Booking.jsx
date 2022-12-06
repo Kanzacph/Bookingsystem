@@ -19,7 +19,7 @@ export default function Booking({ timeslot, room, date, id }) {
 
         <div className="ud-knapper">
           <div className="update-knap">
-            <UpdateModal/>
+            <UpdateModal room = {room} timeslot= {timeslot} date= {date} id={id}/>
           </div>
 
           <div>

@@ -62,9 +62,12 @@ const handleTime = (e) => {
 
 
 {/* Time */}
-          <p className='bekraeft-info'>Tidspunkt: 
+          <p className='bekraeft-info'>Tidspunkt:
             <div className="change-time">
-                <select id="timeslots" defaultValue={timeslot} onChange={handleTime}>
+                <select id="timeslots" 
+                defaultValue={timeslot} 
+                onChange={handleTime}
+                className="change-timepicker">
                     <option value="8.30 - 12.00">8.30 - 12.00</option>
                     <option value="12.30 - 16.00">12.30 - 16.00</option>
                 </select>
@@ -75,7 +78,10 @@ const handleTime = (e) => {
  {/*Room  */}
           <p className='bekraeft-info'>Lokale:
             <div className="change-room">
-                <select id="rooms" defaultValue={room} onChange={handleRoom}>
+                <select id="rooms" 
+                defaultValue={room} 
+                onChange={handleRoom}
+                className="change-roompicker">
                     <option value="101">101</option>
                     <option value="102">102</option>
                     <option value="203">203</option>
@@ -88,11 +94,11 @@ const handleTime = (e) => {
 
 {/* Date */}
           <p className='bekraeft-info'>Dato:
-            <div className="calender">
+            <div className="change-calender">
                 <form action="">
                     <div>
                         <input
-                            className="datepicker calender-img"
+                            className="change-datepicker"
                             type="date"
                             id="calender"
                             name="calender"
@@ -107,12 +113,14 @@ const handleTime = (e) => {
 {/* Annuler og submitknap */}
             </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose} className="Luk-modal">
+            <div className='update-modal-knapper'>
+            <Button variant="secondary" onClick={handleClose} className="Luk-modal-update">
                 Annuller
             </Button>
-            <Button variant="primary" onClick={handleUpdate} className="Bekraeft-modal">
+            <Button variant="primary" onClick={handleUpdate} className="Bekraeft-modal-update">
                 Bekræft
             </Button>
+            </div>
           </Modal.Footer>
         </Modal>
       </>

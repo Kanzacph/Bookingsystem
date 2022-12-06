@@ -40,28 +40,33 @@
     justify-content: left;
   }
 
-  .Bekraeft-modal{   
+  .Bekraeft-modal-update{   
     color: #fbb040;
     font-size: 20px;
     background-color: white;
     border: #fbb040 solid 2px;
-    padding: 11px 25px;
-    margin-top: 15px;
-    margin-right: 10px;
-    margin-bottom: 3px;
-    margin-left: 10px;
     cursor: pointer;
+    padding: 11px 25px;
+    
   }
 
-  .Luk-modal{
+  .Luk-modal-update{
     color: #fbb040;
     font-size: 20px;
     background-color: white;
     border: #fbb040 solid 2px;
-    padding: 11px 25px;
-    margin-top: 15px;
-    margin-right: 10px;
-    margin-bottom: 3px;
-    margin-left: 10px;
     cursor: pointer;
+    padding: 11px 25px;
+
   }
+
+  .update-modal-knapper{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .change-time, .change-room, .change-calender{
+    margin-left: 5px;
+  }
+
+ 

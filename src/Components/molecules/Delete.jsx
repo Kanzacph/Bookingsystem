@@ -1,15 +1,3 @@
-// import { useEffect, useState } from "react";
-// import { transformToArray } from "./firebase-utils.js";
-// import SingleBooking from "./SingleBooking.jsx";
-
-// const url = "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings.json";
-
-// export default function DeleteBooking({bookings, setBookings}){
-//     return(
-//         console.log("clicked")
-//     );
-// }
-
 import "./CSS/NewBooking.css";
 import deleteButton from "../atoms/deleteButton.png";
 

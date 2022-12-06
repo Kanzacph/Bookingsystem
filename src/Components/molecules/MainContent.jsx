@@ -5,7 +5,6 @@ import MyBookings from "./MyBookings.jsx";
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import Locals from "./Locals";
-import BookingForm from "./BookingForm.jsx";
 
 export default function MainContent(props) {
   return (

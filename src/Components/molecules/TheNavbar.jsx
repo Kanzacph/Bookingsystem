@@ -59,7 +59,7 @@ export default function TheNavbar(props) {
               handleClick("/new-booking");
             }}
           >
-            Ny booking
+          Book lokale
           </li>
         </ul>
       </Modal>

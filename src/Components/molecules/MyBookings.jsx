@@ -7,6 +7,12 @@ import { useEffect } from "react";
 export default function MyBookings() {
   const [bookings, setBookings] = useState([]);
 
+  function sortStringDates(a, b) {
+    const aDate = new Date(a);
+    const bDate = new Date(b);
+    return aDate.getTime() - bDate.getTime();
+  }
+
   const getBookings = async () => {
     const response = await fetch(
       `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/.json`,
@@ -14,8 +20,15 @@ export default function MyBookings() {
         method: "GET",
       }
     );
-    setBookings(transformToArray(await response.json()));
-    console.log(bookings);
+    const data = transformToArray(await response.json());
+
+    const sortedData = data.sort(function (a, b) {
+      const aDate = new Date(a.date);
+      const bDate = new Date(b.date);
+      return aDate.getTime() - bDate.getTime();
+    });
+  
+    setBookings(sortedData);
   };
 
   useEffect(() => {
@@ -29,9 +42,8 @@ export default function MyBookings() {
           <div className="mybookings-text">
             <h1>Mine Bookinger</h1>
             <p>
-              Nedenfor finder du dine eksiterende bookinger.
-              Du kan redigere og slette i dine bookinger.
-              
+              Nedenfor finder du dine eksiterende bookinger. Du kan redigere og
+              slette i dine bookinger.
             </p>
           </div>
         </div>

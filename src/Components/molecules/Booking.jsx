@@ -1,5 +1,4 @@
 import "./CSS/NewBooking.css";
-import update from "../atoms/update.png";
 import Delete from "./Delete";
 import UpdateModal from "./UpdateModal";
 

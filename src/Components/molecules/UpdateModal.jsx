@@ -29,7 +29,6 @@ export default function UpdateModal({timeslot, room, date, id}){
 
 
   const result = await response.json();
-    console.log(result);
 };
 
 

@@ -2,7 +2,6 @@ import {useState} from "react"
 import BookingModal from "./BookingModal"
 
 export default function SingleRoom({room, selectedDate}) {
-    console.log(room)
     const [timeslot, setTimeslot] = useState("");
     
     const handleChange = (event) => {

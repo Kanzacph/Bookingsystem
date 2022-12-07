@@ -25,7 +25,6 @@ export default function BookingModal({time, room, selectedDate}) {
     }
     );
     const result = await response.json();
-    console.log(result);
     handleClose();
     
 };

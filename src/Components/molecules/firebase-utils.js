@@ -1,7 +1,6 @@
 // Firebase
 
 export function transformToArray(data) {
-    console.log(data)
     const toReturn = [];
     for (let key in data) {
       const temp = {

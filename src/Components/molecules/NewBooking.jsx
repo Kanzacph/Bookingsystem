@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { transformToArray } from "./firebase-utils";
 import './CSS/NewBooking.css'
 import SingleRoom from './SingleRoom';

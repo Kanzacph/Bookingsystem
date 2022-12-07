@@ -7,12 +7,6 @@ import { useEffect } from "react";
 export default function MyBookings() {
   const [bookings, setBookings] = useState([]);
 
-  function sortStringDates(a, b) {
-    const aDate = new Date(a);
-    const bDate = new Date(b);
-    return aDate.getTime() - bDate.getTime();
-  }
-
   const getBookings = async () => {
     const response = await fetch(
       `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/.json`,
@@ -36,7 +30,7 @@ export default function MyBookings() {
   }, []);
 
   return (
-    <>
+    <div>
       <div className="mybookings-container">
         <div className="mybookings-elements">
           <div className="mybookings-text">
@@ -65,6 +59,6 @@ export default function MyBookings() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

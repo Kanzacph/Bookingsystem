@@ -66,8 +66,6 @@ const handleError = (event) =>{
           <Button onClick={handleSubmit} className="Bekraeft-modal">
             Bekræft
           </Button>
-
-          {/* <button onClick={handleSubmit} className="Opret-button">Opret booking</button> */}
         </Modal.Footer>
       </Modal>
     </>

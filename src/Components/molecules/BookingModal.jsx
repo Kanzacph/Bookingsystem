@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Alert from 'react-bootstrap/Alert';
 import './CSS/BookingModal.css'
 
 export default function BookingModal({time, room, selectedDate}) {
@@ -29,10 +30,19 @@ export default function BookingModal({time, room, selectedDate}) {
     
 };
 
+const handleError = (event) =>{
+  event.preventDefault()
+  if(time){
+    handleShow()
+  }else{
+    alert("Du skal vælge et tidspunkt!");
+  }
+}
+
   return (
     <>
     <div>
-    <button  className = "Opret-button" onClick={handleShow}>
+    <button  className = "Opret-button" onClick={handleError}>
         Opret booking
       </button>
     </div>

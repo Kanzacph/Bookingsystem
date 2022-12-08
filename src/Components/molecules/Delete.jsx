@@ -1,4 +1,3 @@
-import "./CSS/NewBooking.css";
 import deleteButton from "../atoms/deleteButton.png";
 
 export default function Delete({ id }) {

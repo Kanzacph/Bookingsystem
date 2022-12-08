@@ -1,4 +1,3 @@
-import "./CSS/NewBooking.css";
 import Delete from "./Delete";
 import UpdateModal from "./UpdateModal";
 

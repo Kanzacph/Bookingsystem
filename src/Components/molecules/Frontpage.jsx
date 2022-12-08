@@ -1,4 +1,3 @@
-import "./CSS/Frontpage.css";
 import Kalender from "../atoms/Kalender.png";
 import Booking from "../atoms/Booking.png";
 import { useNavigate } from "react-router";

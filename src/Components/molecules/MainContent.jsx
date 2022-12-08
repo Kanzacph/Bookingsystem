@@ -1,4 +1,3 @@
-import "./CSS/MainContent.css";
 import Frontpage from "./Frontpage.jsx";
 import NewBooking from "./NewBooking.jsx";
 import MyBookings from "./MyBookings.jsx";

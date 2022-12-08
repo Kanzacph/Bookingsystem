@@ -1,4 +1,3 @@
-import "./CSS/MyBookings.css";
 import { useState } from "react";
 import Booking from "./Booking";
 import { transformToArray } from "./firebase-utils";

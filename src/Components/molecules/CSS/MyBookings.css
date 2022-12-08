@@ -36,16 +36,6 @@ body{
     padding: 20px;
 }
 
-/* .mybookings-date{
-    color: white;
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    padding: 20px; 
-    padding-right: 40px; 
-    border-right: 2px solid rgb(251, 176, 64, 43%); 
-    
-} */
 
 .datoen{
     display: flex;   
@@ -59,9 +49,6 @@ body{
     color: white;
     padding-right: 500px;   
     padding-left: 20px; 
-    /* display: block; */
-    /* flex-direction: column; */
-    /* justify-content: left; */
     margin-left: 15px 30px;
     text-align: left;
 }

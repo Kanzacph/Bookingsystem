@@ -26,24 +26,6 @@ body{
     
 }
 
-.myboookings-boks1, .myboookings-boks2{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-    background: rgb(217, 217, 217, 20%);
-    background-color: rgb(217, 217, 217, 20%);
-    border-radius: 15px 15px 15px 15px;
-    padding: 20px;
-}
-
-
-.datoen{
-    display: flex;   
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: -40px;
-    font-size: 35px;
-}
 
 .mybookings-info p{
     color: white;
@@ -60,29 +42,7 @@ body{
     justify-content: center;
 }
 
-.changebooking-button{
-    padding: 20px;
-}
-.deletebooking-button{
-    padding: 20px;
-}
 
-.inputfelter{
-display: flex;
-justify-content: center;
-}
 
-.Lokale-felt, .Dato-felt{
-    color: white;
-    text-align: center;
-}
 
-.Lokale-felt, .Dato-felt > label{
-    font-weight: bold;
-}
-
-.submit-felt{
-   display: flex;
-   justify-content: center;
-}
 

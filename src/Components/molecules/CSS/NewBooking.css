@@ -7,11 +7,6 @@
     justify-content: center;
 }
 
-.mere-link-button{
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
 
 form{
     display: flex;
@@ -91,9 +86,6 @@ form{
     font-weight: bold;
 }
 
-.mere{
-    margin-left: 30px;
-}
 
 h1{
     text-align: center;

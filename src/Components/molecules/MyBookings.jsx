@@ -36,7 +36,7 @@ export default function MyBookings() {
           <div className="mybookings-text">
             <h1>Mine Bookinger</h1>
             <p>
-              Nedenfor finder du dine eksiterende bookinger. Du kan redigere og
+              Nedenfor finder du dine eksisterende bookinger. Du kan redigere og
               slette i dine bookinger.
             </p>
           </div>

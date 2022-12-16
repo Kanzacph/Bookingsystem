@@ -1,5 +1,6 @@
 .locals-container p{
     text-align: left;
+    color: black;
 }
 .klasselokale{
     height: 400px;
@@ -12,7 +13,7 @@
 }
 
 p{
-    color: white;
+    color: black;
     margin-right: 10%;
    
 }
@@ -40,6 +41,12 @@ p{
     justify-content: space-between;
  }
 
- 
+.button{
+    padding-left: 50%;
+    padding-top: 4px;
+}
 
+.text-black{
+    color: black;
+}
 

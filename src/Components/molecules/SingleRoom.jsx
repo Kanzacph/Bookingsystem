@@ -1,6 +1,7 @@
 import {useState} from "react"
 import BookingModal from "./BookingModal"
 
+
 export default function SingleRoom({room, selectedDate}) {
     const [timeslot, setTimeslot] = useState("");
     
@@ -37,6 +38,7 @@ export default function SingleRoom({room, selectedDate}) {
                 </div>
         
                 <BookingModal time={timeslot} room = {room} selectedDate = {selectedDate}/>
+                
                 
             </div>
       </div>

@@ -1,13 +1,13 @@
-import { useNavigate } from 'react-router'
+import { useNavigate } from "react-router";
 import { useState } from "react";
 import { transformToArray } from "./firebase-utils";
-import SingleRoom from './SingleRoom';
+import SingleRoom from "./SingleRoom";
+import LocalsModal from "./LocalsModal";
 
-
-export default function NewBooking(){
-    const navigate = useNavigate();
-    const [selectedDate, setSelectedDate] = useState('');
-    const [availableRooms, setAvailableRooms] = useState([]);
+export default function NewBooking() {
+  const navigate = useNavigate();
+  const [selectedDate, setSelectedDate] = useState("");
+  const [availableRooms, setAvailableRooms] = useState([]);
 
   const getRooms = async () => {
     const response = await fetch(
@@ -24,30 +24,24 @@ export default function NewBooking(){
     getRooms();
   };
 
-    function handleClick(route){
-        navigate(route);
-    }
+  function handleClick(route) {
+    navigate(route);
+  }
 
-    return(
-        <div className="booking">
+  return (
+    <div className="booking">
       <h1>Book lokale</h1>
 
-      <div className='local-buttons-container'>
-     
-                    <li>Lokale 101</li>
-                    <li>Lokale 102</li>
-                    <li>Lokale 203</li>
-                    <li>Lokale 204</li>
-                    <li>Lokale 208</li>
-                    <li>Lokale 209</li>
-         
+      <div className="local-buttons-container">
+        <li>Lokale 101</li>
+        <li>Lokale 102</li>
+        <li>Lokale 203</li>
+        <li>Lokale 204</li>
+        <li>Lokale 208</li>
+        <li>Lokale 209</li>
 
-            <div onClick={() => handleClick('/locals')}  >
-                <button className='knap'>Læs om lokalerne her</button>
-            </div>
-            </div>
-
-
+      <LocalsModal/>
+      </div>
 
       <div className="calender">
         <form action="">
@@ -61,17 +55,11 @@ export default function NewBooking(){
             />
           </div>
         </form>
-
       </div>
 
       {availableRooms.map((room) => {
-        return <SingleRoom room={room} selectedDate={selectedDate} />
+        return <SingleRoom room={room} selectedDate={selectedDate} />;
       })}
-
-
     </div>
-        
-
-        
-    );
+  );
 }

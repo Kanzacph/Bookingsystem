@@ -26,8 +26,6 @@ export default function UpdateModal({timeslot, room, date, id}){
   );
   window.location.reload();
 
-
-  const result = await response.json();
 };
 
 

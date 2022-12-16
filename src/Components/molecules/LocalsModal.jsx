@@ -5,7 +5,7 @@ import klasselokale from "../atoms/klasselokale.png";
 import kryds from "../../Components/atoms/kryds.png";
 import { transformToArray } from "./firebase-utils";
 import { useEffect } from "react";
-import { type } from "@testing-library/user-event/dist/type";
+
 
 export default function LocalsModal() {
   const navigate = useNavigate();

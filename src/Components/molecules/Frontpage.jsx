@@ -2,7 +2,7 @@ import Kalender from "../atoms/Kalender.png";
 import Booking from "../atoms/Booking.png";
 import { useNavigate } from "react-router";
 
-export default function Frontpage(props) {
+export default function Frontpage() {
   const navigate = useNavigate();
 
 

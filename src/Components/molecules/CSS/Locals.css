@@ -43,7 +43,8 @@ p{
 
 .button{
     padding-left: 50%;
-    padding-top: 4px;
+    padding-top: 6px;
+    cursor: pointer;
 }
 
 .text-black{

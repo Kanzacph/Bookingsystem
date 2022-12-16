@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 import { useState } from "react";
 import { transformToArray } from "./firebase-utils";
 import SingleRoom from "./SingleRoom";
-import LocalsModal from "./LocalsModal";
+import RoomModal from "./RoomModal";
 
 export default function NewBooking() {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ export default function NewBooking() {
     <div className="booking">
       <h1>Book lokale</h1>
 
-      <div className="local-buttons-container">
+      <div className="room-buttons-container">
         <li>Lokale 101</li>
         <li>Lokale 102</li>
         <li>Lokale 203</li>
@@ -40,7 +40,7 @@ export default function NewBooking() {
         <li>Lokale 208</li>
         <li>Lokale 209</li>
 
-      <LocalsModal/>
+      <RoomModal/>
       </div>
 
       <div className="calender">

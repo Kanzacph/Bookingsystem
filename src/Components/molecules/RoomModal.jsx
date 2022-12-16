@@ -7,7 +7,7 @@ import { transformToArray } from "./firebase-utils";
 import { useEffect } from "react";
 
 
-export default function LocalsModal() {
+export default function RoomModal() {
   const navigate = useNavigate();
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [allRooms, setAllRooms] = useState([]);
@@ -56,7 +56,7 @@ export default function LocalsModal() {
           return (
             <div>
               <div>
-                <div className="locals-container">
+                <div className="room-container">
                   <div>
                     <h2 className="text-black">Lokale {room.id}</h2>
                   </div>

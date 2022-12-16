@@ -5,6 +5,7 @@ import "./Components/molecules/CSS/MainContent.css";
 import "./Components/molecules/CSS/MyBookings.css";
 import "./Components/molecules/CSS/TheNavbar.css";
 import './Components/molecules/CSS/UpdateModal.css'
+import "./Components/molecules/CSS/Room.css";
 import "./App.css";
 import * as React from "react";
 import TheNavbar from "./Components/molecules/TheNavbar.jsx";

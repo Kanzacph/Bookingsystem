@@ -1,8 +1,8 @@
-.local-buttons{
+.room-buttons{
     display: flex;
 }
 
-.local-buttons > h2{
+.room-buttons > h2{
     display: flex;
     justify-content: center;
 }
@@ -79,7 +79,7 @@ form{
     width: 40%;
 }
 
-.local-buttons-container{
+.room-buttons-container{
     margin-left: 30px;
     color: white;
     font-size: medium;

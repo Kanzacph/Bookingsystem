@@ -1,7 +1,6 @@
 import "./Components/molecules/CSS/NewBooking.css";
 import './Components/molecules/CSS/BookingModal.css'
 import "./Components/molecules/CSS/Frontpage.css";
-import './Components/molecules/CSS/Locals.css'
 import "./Components/molecules/CSS/MainContent.css";
 import "./Components/molecules/CSS/MyBookings.css";
 import "./Components/molecules/CSS/TheNavbar.css";

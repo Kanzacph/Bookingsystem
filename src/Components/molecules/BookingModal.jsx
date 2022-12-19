@@ -24,7 +24,6 @@ export default function BookingModal({time, room, selectedDate}) {
         body: JSON.stringify(booking),
     }
     );
-    const result = await response.json();
     handleClose();
     
 };

@@ -15,14 +15,19 @@ export default function UpdateModal({timeslot, room, date, id}){
   
     const handleUpdate = async (e) => {
       e.preventDefault();
+      const update = {
+        timeslot: selectedTime,
+        room: selectedRoom,
+        date: selectedDate
+      }
     
       const response = await fetch(
         `https://eksamen-frontend-default-rtdb.europe-west1.firebasedatabase.app/bookings/${id}.json`,
       {
           method: "PUT",
-          body: JSON.stringify({timeslot: selectedTime, room: selectedRoom, date: selectedDate}),
+          body: JSON.stringify(update),
       }
-
+   
   );
   window.location.reload();
 

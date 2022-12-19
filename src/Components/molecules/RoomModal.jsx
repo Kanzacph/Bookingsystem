@@ -14,14 +14,15 @@ export default function RoomModal() {
 
   const getRooms = async () => {
     const response = await fetch(
-      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/rooms.json`,
+      `https://eksamen-frontend-default-rtdb.europe-west1.firebasedatabase.app/rooms.json`,
       {
         method: "GET",
       }
     );
 
+    
+
     setAllRooms(transformToArray(await response.json()));
-    console.log(allRooms);
   };
 
   useEffect(() => {
@@ -54,7 +55,7 @@ export default function RoomModal() {
           <h1 className="text-black">Beskrivelse af lokaler</h1>
         {allRooms.map((room) => {
           return (
-            <div>
+            <div className="room-container1">
               <div>
                 <div className="room-container">
                   <div>
@@ -83,6 +84,8 @@ export default function RoomModal() {
                       Type: <br />
                       {room.type}
                     </p>
+                    <div className="delete">
+                    </div>
                   </div>
                 </div>
               </div>

@@ -17,7 +17,7 @@ export default function UpdateModal({timeslot, room, date, id}){
       e.preventDefault();
     
       const response = await fetch(
-      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/${id}/.json`,
+        `https://eksamen-frontend-default-rtdb.europe-west1.firebasedatabase.app/bookings/${id}.json`,
       {
           method: "PUT",
           body: JSON.stringify({timeslot: selectedTime, room: selectedRoom, date: selectedDate}),

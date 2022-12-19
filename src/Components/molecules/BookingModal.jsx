@@ -18,7 +18,7 @@ export default function BookingModal({time, room, selectedDate}) {
     }
 
     const response = await fetch(
-    "https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/bookings/.json",
+      `https://eksamen-frontend-default-rtdb.europe-west1.firebasedatabase.app/bookings.json`,
     {
         method: "POST",
         body: JSON.stringify(booking),

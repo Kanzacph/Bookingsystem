@@ -11,7 +11,7 @@ export default function NewBooking() {
 
   const getRooms = async () => {
     const response = await fetch(
-      `https://frontend-eksamensprojekt-default-rtdb.europe-west1.firebasedatabase.app/rooms.json`,
+      `https://eksamen-frontend-default-rtdb.europe-west1.firebasedatabase.app/rooms.json`,
       {
         method: "GET",
       }

@@ -84,7 +84,7 @@ export default function RoomModal() {
                       Type: <br />
                       {room.type}
                     </p>
-                    <div className="delete">
+                    <div>
                     </div>
                   </div>
                 </div>
